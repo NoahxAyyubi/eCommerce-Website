@@ -1,0 +1,14 @@
+/* App.css */
+
+.App {
+    max-width: 1200px; /* Set the maximum width of the app */
+    margin: 0 auto; /* Center the app in the viewport */
+
+  }
+  
+  /* If you want the background color to extend beyond the max-width, you can apply it to the body instead */
+  body {
+    background-color: rgb(195, 203, 203); /* Grey background */
+   
+  }
+  

@@ -1,0 +1,83 @@
+.home__carousel {
+    
+    width: 100%;
+    position: relative;
+    margin: auto; /* Center the container */
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+    
+  }
+  
+  
+/* Style for each slide's image */
+.home__carousel img {
+    width: 100%; /* Make image take full width of the slide */
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the slide area, can be adjusted to 'contain' */
+    position: relative;
+}
+/* ------------------------------------------------------- */
+
+
+/* Navigation Arrows */
+.home__carousel .slick-prev,
+.home__carousel .slick-next {
+  z-index: 1; /* Ensure they're above the images */
+  background: none;
+  color: #fff; /* Color of the arrows */
+  border: none; /* Remove borders */
+  padding: 10px; /* Sizing of the arrows */
+  top: 50%; /* Position arrows vertically centered */
+  transform: translateY(-50%); /* Adjust vertical position */
+  
+}
+
+/* Additional styles for better visibility if needed */
+.home__carousel .slick-prev:before,
+.home__carousel .slick-next:before {
+  opacity: 1; /* Make arrows fully opaque */
+  color: #fff; /* Ensure arrow color is white */
+  
+}
+
+/* Adjust position of the arrows */
+.home__carousel .slick-prev {
+  left: -5px; /* Position the left arrow */
+}
+
+.home__carousel .slick-next {
+  right: 10px; /* Position the right arrow */
+}
+
+
+/* ------------------------------------------- */
+
+/* CSS for the slider container */
+.slider-container {
+  position: relative;
+}
+
+/* Style for each slide */
+.slider-container .slick-slide {
+  transition: opacity 5s ease; /* How slow it fades off */
+  opacity: 0.5; /* Start with opacity 0 (hidden) */
+}
+
+/* Apply the transition effect when the slide is active */
+.slider-container .slick-active {
+  opacity: 1; /* Transition to opacity 1 (visible) */
+}
+
+
+/* ---------------------------------------------- */
+
+.home__carousel::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to bottom, rgba(195, 203, 203, 0) 0%, rgb(195, 203, 203) 90%);
+  z-index: 2;
+  pointer-events: none;
+}

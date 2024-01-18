@@ -1,0 +1,41 @@
+.subtotal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Keep space between items if there's extra room */
+     /* Adjust width to be responsive within its parent container */
+    padding: 5px 20px;
+    margin: 5px;
+    background-color: #f3f3f3;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    
+  }
+  
+  .subtotal__gift {
+    display: flex;
+    align-items: center;
+  }
+  
+  .subtotal__gift > input {
+    margin-right: 5px;
+  }
+  
+.subtotal > button {
+  background: #ffd814;
+  border-radius: 10px; /* Updated border-radius */
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin-top: 10px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for color and shadow */
+}
+
+.subtotal > button:hover {
+  background: #f0c14b; /* Lighter color on hover */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+button:focus {
+  outline: none; /* Removes the default outline */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Adds a custom focus style */
+}

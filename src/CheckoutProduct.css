@@ -1,0 +1,39 @@
+.checkoutProduct {
+	display: flex;
+	border-bottom: 1px solid lightgray;
+	margin-bottom: 15px;
+	
+}
+
+.checkoutProduct__info {
+	
+}
+
+.checkoutProduct__info > button {
+	background: #ffd814;
+	border: 1px solid;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 7px;
+}/* Hover effect with color change */
+
+.checkoutProduct__info > button:hover {
+    background-color: #e2a123; /* Slightly darker color for hover effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.checkoutProduct__image {
+	object-fit: contain;
+	width: 180px;
+	height: 180px;
+}
+
+.checkoutProduct__rating {
+	display: flex;
+}
+
+.checkoutProduct__title {
+	font-size: 17px;
+	font-weight: 700;
+
+}
