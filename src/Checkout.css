@@ -21,6 +21,7 @@
     /* Decrease the right margin or padding, or add negative margin to move it left */
      /* Adjust this value as needed */
      flex: 1;
+   min-width: 200px;
     /* Other styles... */
 }
 .checkout__right__image {
@@ -37,7 +38,7 @@
 
     .checkout__ad {
         margin-top: 3px; /* Smaller top margin */
-        width: 100%; /* Full width */
+        width: 60%; /* Full width */
     }
 
     .checkout__title {
@@ -47,12 +48,14 @@
     }
 
     .checkout__right {
-        width: 100%; /* Full width on small screens */
-        margin-top: 10px; /* Add some top margin for separation */
+        flex: none; /* Adjust flex property for smaller screens */
+        width: 40%; /* Full width on small screens */
+         /* Override min-width */
+         /* Add some top margin for separation */
     }
 
     .checkout__right__image {
-        width: 70%; /* Adjust width for smaller screens */
+        width: 100%; /* Adjust width for smaller screens */
         padding: 5px; /* Adjust padding for smaller screens */
     }
 
