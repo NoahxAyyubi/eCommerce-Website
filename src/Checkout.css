@@ -38,7 +38,7 @@
 
     .checkout__ad {
         margin-top: 3px; /* Smaller top margin */
-        width: 60%; /* Full width */
+        width: 100%; /* Full width */
     }
 
     .checkout__title {
@@ -49,13 +49,13 @@
 
     .checkout__right {
         flex: none; /* Adjust flex property for smaller screens */
-        width: 40%; /* Full width on small screens */
+        width: 50%; /* Full width on small screens */
          /* Override min-width */
          /* Add some top margin for separation */
     }
 
     .checkout__right__image {
-        width: 100%; /* Adjust width for smaller screens */
+        width: 80%; /* Adjust width for smaller screens */
         padding: 5px; /* Adjust padding for smaller screens */
     }
 

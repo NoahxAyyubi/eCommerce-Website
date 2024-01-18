@@ -36,4 +36,33 @@
 	font-size: 17px;
 	font-weight: 700;
 
+}/* Base styles */
+/* ... (existing styles for .checkoutProduct and its children) ... */
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 414px) {
+    .checkoutProduct {
+        /* Adjust overall layout if necessary */
+        margin-bottom: 10px; /* Slightly smaller margin */
+    }
+
+    .checkoutProduct__info > button {
+        margin-top: 7px; /* Smaller margin */
+        margin-bottom: 7px; /* Smaller margin */
+        padding: 6px 12px; /* Smaller padding */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .checkoutProduct__image {
+        width: 126px; /* Smaller width */
+        height: 126px; /* Smaller height */
+    }
+
+    .checkoutProduct__rating {
+        /* Adjust if necessary */
+    }
+
+    .checkoutProduct__title {
+        font-size: 12px; /* Smaller font size */
+    }
 }
