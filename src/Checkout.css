@@ -21,7 +21,6 @@
     /* Decrease the right margin or padding, or add negative margin to move it left */
      /* Adjust this value as needed */
      flex: 1;
-   min-width: 200px;
     /* Other styles... */
 }
 .checkout__right__image {
@@ -48,7 +47,6 @@
     }
 
     .checkout__right {
-        flex: none; /* Adjust flex property for smaller screens */
         width: 100%; /* Full width on small screens */
         margin-top: 10px; /* Add some top margin for separation */
     }
