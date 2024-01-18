@@ -40,15 +40,6 @@ function Header() {
         </div>
         </Link>
 
-      
-
-      
-        <Link to={"/"} className="header__link">
-        <div className="header__option">       
-        <span className="header__option1">Your</span>
-        <span className="header__option2">Prime</span>
-        </div>
-        </Link>
         <Link to={"/checkout"} className="header__link">
     <div className="header__cartContainer">
         <ShoppingCartIcon style={{ fontSize: '28px' }} />

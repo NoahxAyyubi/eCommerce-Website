@@ -38,4 +38,29 @@
 button:focus {
   outline: none; /* Removes the default outline */
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Adds a custom focus style */
+}/* Base styles */
+/* ... (existing styles for .subtotal and its children) ... */
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 414px) {
+  .subtotal {
+      padding: 5px 10px; /* Smaller padding */
+      margin: 3px; /* Smaller margin */
+      /* Adjust other styles as needed */
+  }
+
+  .subtotal__gift {
+      /* Adjust styles for .subtotal__gift if needed */
+  }
+
+  .subtotal__gift > input {
+      margin-right: 3px; /* Smaller margin */
+  }
+
+  .subtotal > button {
+      padding: 8px; /* Smaller padding for the button */
+      margin-top: 5px; /* Smaller margin-top */
+      font-size: 14px; /* Smaller font size for text inside the button */
+      /* Adjust other button styles as needed */
+  }
 }

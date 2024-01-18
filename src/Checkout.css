@@ -21,7 +21,7 @@
     /* Decrease the right margin or padding, or add negative margin to move it left */
      /* Adjust this value as needed */
      flex: 1;
-   min-width: 210px;
+   min-width: 200px;
     /* Other styles... */
 }
 .checkout__right__image {
@@ -29,4 +29,35 @@
   padding-top: 5px;
   padding-bottom: 15px;
   padding-left: 10px;
+}
+
+@media only screen and (max-width: 414px) {
+    .checkout {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+
+    .checkout__ad {
+        margin-top: 3px; /* Smaller top margin */
+        width: 100%; /* Full width */
+    }
+
+    .checkout__title {
+        margin-right: 5px; /* Smaller right margin */
+        padding: 15px; /* Smaller padding */
+        font-size: 16px; /* Smaller font size if necessary */
+    }
+
+    .checkout__right {
+        flex: none; /* Adjust flex property for smaller screens */
+        width: 100%; /* Full width on small screens */
+        min-width: 0; /* Override min-width */
+        margin-top: 10px; /* Add some top margin for separation */
+    }
+
+    .checkout__right__image {
+        width: 80%; /* Adjust width for smaller screens */
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
+
+    /* Adjust other elements as necessary */
 }
