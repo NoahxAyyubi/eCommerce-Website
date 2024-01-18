@@ -50,12 +50,11 @@
     .checkout__right {
         flex: none; /* Adjust flex property for smaller screens */
         width: 100%; /* Full width on small screens */
-        min-width: 0; /* Override min-width */
         margin-top: 10px; /* Add some top margin for separation */
     }
 
     .checkout__right__image {
-        width: 80%; /* Adjust width for smaller screens */
+        width: 70%; /* Adjust width for smaller screens */
         padding: 5px; /* Adjust padding for smaller screens */
     }
 
