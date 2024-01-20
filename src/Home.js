@@ -76,7 +76,7 @@ function Home() {
                     title="New Apple iPad Pro (12.9-inch, 128GB)"
                     price={18.49}
                     rating={3}
-                    image="https://www.pbtech.co.nz/imgprod/T/A/TAAAPP96032.jpg?h=2736740794"
+                    image="https://www.pbtech.co.nz/imgprod/T/A/TAAAPP96032.jpg"
                 />
             </div>
         </div>
