@@ -27,7 +27,7 @@
   
   .product__image {
     padding: 5px;
-    width: 90%;
+    width: 95%;
     height: 250px;
     object-fit: contain;
     
@@ -75,15 +75,15 @@
     }
   
     .product {
-     padding: 5px;
-      margin: 13px; /* Smaller margin to fit two products side by side */
+     
+      margin: 10px; /* Smaller margin to fit two products side by side */
      
     }
   
     .product__image {
-      width: 190px;
+      width: 150px;
 
-      height: 190px; /* Smaller image for mobile */
+      height: 150px; /* Smaller image for mobile */
     }
   
     .product button {
