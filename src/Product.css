@@ -27,14 +27,14 @@
   
   .product__image {
     padding: 5px;
-    width: 100%;
-    height: 270px;
+    width: 90%;
+    height: 250px;
     object-fit: contain;
     
   }
   
   .product__info {
-    margin-bottom: 10px;
+    margin: 15px;
    
   }
   
@@ -66,26 +66,29 @@
 }
   
   
-  @media (max-width: 767px) {
+  @media (max-width:800px) {
     .home__productsrow1,
     .home__productsrow2 {
       display: flex;
       flex-wrap: wrap; /* Allow products to wrap to the next line */
-      justify-content: space-around; /* Space products evenly */
+      
     }
   
     .product {
-      
-      margin: 3px; /* Smaller margin to fit two products side by side */
+     padding: 5px;
+      margin: 13px; /* Smaller margin to fit two products side by side */
+     
     }
   
     .product__image {
+      width: 190px;
 
-      height: 150px; /* Smaller image for mobile */
+      height: 190px; /* Smaller image for mobile */
     }
   
     .product button {
-      width: 120px; /* Smaller button for mobile */
+      width: 140px; /* Smaller button for mobile */
+      
     }
   
     .home__productsrow1 {

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Header"; // Import Header component
 import Home from "./Home.js";
 import Checkout from "./Checkout";
+import Login from "./Login.js"
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
 
           <Route 
             path="/login" 
-            element={<h1>Login Page under development, employee underpaid and understaffed...</h1>} 
+      element={<Login/>} 
           />
 
           <Route
