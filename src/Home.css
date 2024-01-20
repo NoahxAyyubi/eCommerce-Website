@@ -41,7 +41,7 @@
 
 /* Adjust position of the arrows */
 .home__carousel .slick-prev {
-  left: -5px; /* Position the left arrow */
+  left: -10px; /* Position the left arrow */
 }
 
 .home__carousel .slick-next {
