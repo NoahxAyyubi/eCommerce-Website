@@ -72,7 +72,7 @@
 @media screen and (max-width: 600px) {
  .header__logo {
    
-    width: 130px;
+    width: 135px;
     
 
  }
@@ -95,8 +95,8 @@
 
   .header__logo {
     object-fit: contain;
-    width: 150px;
-    margin-top:-5px ;
+    width: 135px;
+    margin-top:-4px ;
    
   }
   .header__searchbar{
@@ -122,4 +122,10 @@
     font-size: 14px;
     font-weight: 750;
   }
+  .header__cartContainer {
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+    padding-right: 8px;
+}
 }

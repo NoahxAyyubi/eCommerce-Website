@@ -42,8 +42,8 @@ function Header() {
           </Link>
           <Link to={"/checkout"} className="header__link">
     <div className="header__cartContainer">
-        <ShoppingCartIcon style={{ fontSize: '28px' }} />
-        <span style={{ color: 'darkorange', fontSize: '20px' }}>{basket?.length}</span>
+        <ShoppingCartIcon style={{ fontSize: '26px' }} />
+        <span style={{ color: 'darkorange', fontSize: '19px' }}>{basket?.length}</span>
     </div>
 </Link>
         </div>
