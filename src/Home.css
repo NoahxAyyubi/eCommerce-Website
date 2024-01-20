@@ -22,12 +22,12 @@
 .home__carousel .slick-prev,
 .home__carousel .slick-next {
   z-index: 1; /* Ensure they're above the images */
-  background: none;
+  
   color: #fff; /* Color of the arrows */
-  border: none; /* Remove borders */
-  padding: 10px; /* Sizing of the arrows */
+
+  
   top: 50%; /* Position arrows vertically centered */
-  transform: translateY(-50%); /* Adjust vertical position */
+
   
 }
 
@@ -41,11 +41,11 @@
 
 /* Adjust position of the arrows */
 .home__carousel .slick-prev {
-  left: -10px; /* Position the left arrow */
+  left: 1px; /* Position the left arrow */
 }
 
 .home__carousel .slick-next {
-  right: 10px; /* Position the right arrow */
+  right: 1px; /* Position the right arrow */
 }
 
 
