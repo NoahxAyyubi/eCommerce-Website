@@ -102,8 +102,8 @@
   .header__searchbar{
     display: flex;
 
- width: 190%;
-    margin-left: 25px;
+ width: 180%;
+    margin-left: 15px;
     margin-bottom: 5px;
    
   }
@@ -112,5 +112,14 @@
     display: flex;
     margin-top: 8px;
      
+  }
+  .header__option1 {
+    font-size: 10px;
+    font-weight: 700;
+  }
+  
+  .header__option2 {
+    font-size: 14px;
+    font-weight: 750;
   }
 }
