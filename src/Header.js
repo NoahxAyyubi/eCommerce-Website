@@ -9,47 +9,35 @@ function Header() {
   const [{ basket }, dispatch] = useStateValue();
 
   return (
-    <nav className="header">
-      <div className="header__topContainer">
-        
-        <Link to="/" >
-          <img className="header__logo" src="/output-onlinepngtools (1) (1).png" alt="Amazon Logo" />
-        </Link>
-        <div className="header__searchbar">
+    <header className="header">
+      <Link to="/" className="header__logo">
+        <img src="/output-onlinepngtools (1) (1).png" alt="Amazon Logo" />
+      </Link>
+      <div className="header__searchbar">
         <input type="text" className="header__searchInput" />
         <SearchIcon className="header__searchIcon" />
-        </div>
       </div>
-
-      <div className="header__nav">
-          <Link to="/login" className="header__link">
-            <div className="header__option">
-              <span className="header__option1">Hello</span>
-              <span className="header__option2">Sign In</span>
-            </div>
-          </Link>
-          <Link to="/" className="header__link">
-            <div className="header__option">
-              <span className="header__option1">Returns</span>
-              <span className="header__option2">& Orders</span>
-            </div>
-          </Link>
-          <Link to="/" className="header__link">
-            <div className="header__option">
-              <span className="header__option1">Your</span>
-              <span className="header__option2">Prime</span>
-            </div>
-          </Link>
-          <Link to={"/checkout"} className="header__link">
-    <div className="header__cartContainer">
-        <ShoppingCartIcon style={{ fontSize: '26px' }} />
-        <span style={{ color: 'darkorange', fontSize: '19px' }}>{basket?.length}</span>
-    </div>
-</Link>
-        </div>
-      
-
-    </nav>
+      <nav className="header__nav">
+      <Link to="/login" className="header__link">
+          <span style={{ fontSize: '12px', fontWeight: 750 }}>Hello</span><br />
+          <span style={{ fontSize: '16px', fontWeight: 800 }}>Sign In</span>
+        </Link>
+        <Link to="/login" className="header__link">
+          <span style={{ fontSize: '12px', fontWeight: 750 }}>Returns</span><br />
+          <span style={{ fontSize: '16px', fontWeight: 800 }}>& Orders</span>
+        </Link>
+        <Link to="/login" className="header__link">
+          <span style={{ fontSize: '12px', fontWeight: 750 }}>Your</span><br />
+          <span style={{ fontSize: '16px', fontWeight: 800 }}>Prime</span>
+        </Link>
+        <Link to="/checkout" className="header__link">
+          <div className="header__cartContainer">
+            <ShoppingCartIcon style={{ fontSize: '26px' }} />
+            <span style={{ color: 'darkorange', fontSize: '19px' }}>{basket?.length}</span>
+          </div>
+        </Link>
+      </nav>
+    </header>
   );
 }
 
