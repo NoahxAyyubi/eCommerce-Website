@@ -61,7 +61,7 @@
   }
 
   .header__logo img {
-    width: 70%; /* Reduce the width of the logo to half */
+    width: 65%; /* Reduce the width of the logo to half */
     order: 1;
   }
 
@@ -74,7 +74,7 @@
   flex-wrap: wrap;
 }
 .header__link {
-  padding: 4px;
+  padding: 3px;
   
 }
 
