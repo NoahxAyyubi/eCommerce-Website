@@ -61,18 +61,21 @@
   }
 
   .header__logo img {
-    width: 80%; /* Reduce the width of the logo to half */
+    width: 70%; /* Reduce the width of the logo to half */
     order: 1;
   }
 
 .header__nav {
   flex-basis: 100%; /* Full width on small screens */
   order: 1; /* Keep the logo at the top */
-  margin-top: -70px;
+  margin-top: -60px;
 }
 .header {
   flex-wrap: wrap;
 }
+.header__link {
+  padding: 4px;
+  
 }
 
-
+}
