@@ -3,9 +3,6 @@
   display: flex;
   align-items: center;
   position: sticky;
-  flex-wrap: wrap;
-  z-index: 100;
-  width: 100%;
   
 }
 
@@ -41,19 +38,22 @@
   align-items: center;
   flex: 0 0 auto;
   margin-right: 10px;
+
+  
   
 }
 .header__link {
   color: white;
   text-decoration: none;
   padding: 5px;
+  
 }
 .header__cartContainer {
   display: flex;
   align-items: center
   
 }
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   .header__searchbar {
     flex-basis: 100%;
     order: 3;
@@ -70,7 +70,9 @@
   order: 1; /* Keep the logo at the top */
   margin-top: -70px;
 }
-
+.header {
+  flex-wrap: wrap;
+}
 }
 
 

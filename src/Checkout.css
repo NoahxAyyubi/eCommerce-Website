@@ -18,23 +18,16 @@
   
 }
 .checkout__right {
-    /* Decrease the right margin or padding, or add negative margin to move it left */
-     /* Adjust this value as needed */
      flex: 1;
    min-width: 200px;
     /* Other styles... */
 }
-.checkout__right__image {
-  width: 90%; /* Full width of the container */
-  padding-top: 5px;
-  padding-bottom: 15px;
-  padding-left: 10px;
+.checkout__right img {
+    width: 98%; /* Adjust width for smaller screens */
+    padding-top: 5px;
 }
 
-@media only screen and (max-width: 414px) {
-    .checkout {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
-    }
+@media only screen and (max-width: 668px) {
 
     .checkout__ad {
         margin-top: 3px; /* Smaller top margin */
@@ -44,20 +37,16 @@
     .checkout__title {
         margin-right: 5px; /* Smaller right margin */
         padding: 15px; /* Smaller padding */
-        font-size: 16px; /* Smaller font size if necessary */
+        font-size: 15px; /* Smaller font size if necessary */
     }
 
     .checkout__right {
-        flex: none; /* Adjust flex property for smaller screens */
-        width: 50%; /* Full width on small screens */
+        flex: 1; /* Adjust flex property for smaller screens */
+         /* Full width on small screens */
          /* Override min-width */
          /* Add some top margin for separation */
     }
 
-    .checkout__right__image {
-        width: 80%; /* Adjust width for smaller screens */
-        padding: 5px; /* Adjust padding for smaller screens */
-    }
-
+    
     /* Adjust other elements as necessary */
 }

@@ -37,7 +37,6 @@ function Checkout() {
 
 			<div className="checkout__right">
 			<img
-                    className="checkout__right__image"
                     src="/Animated GIF Banner AD 1.gif" // Replace with your image path
                     alt="Descriptive Text" // Replace with your alt text
                 />

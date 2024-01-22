@@ -4,11 +4,11 @@
     justify-content: space-between; /* Keep space between items if there's extra room */
      /* Adjust width to be responsive within its parent container */
     padding: 5px 20px;
-    margin: 5px;
+    margin-right: 3px;
     background-color: #f3f3f3;
     border: 1px solid #dddddd;
     border-radius: 5px;
-    
+    margin-bottom: 4px;
   }
   
   .subtotal__gift {
@@ -21,13 +21,15 @@
   }
   
 .subtotal > button {
-  background: #ffd814;
-  border-radius: 10px; /* Updated border-radius */
-  width: 100%;
-  height: auto;
-  padding: 10px;
-  margin-top: 10px;
+  background: #f0c14b;
+	border-radius: 5px;
+	width: 150px;
+	height: 30px;
+	border: 1px solid;
+	margin-top: 5px ;
+	border-color: #a88734 #9c7e31 #846a29;
   transition: background-color 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for color and shadow */
+  color: #111;
 }
 
 .subtotal > button:hover {
@@ -42,25 +44,21 @@ button:focus {
 /* ... (existing styles for .subtotal and its children) ... */
 
 /* Media query for smaller screens */
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 668px) {
   .subtotal {
       padding: 5px 10px; /* Smaller padding */
-      margin: 3px; /* Smaller margin */
-      /* Adjust other styles as needed */
+      
   }
 
-  .subtotal__gift {
-      /* Adjust styles for .subtotal__gift if needed */
-  }
-
+  
   .subtotal__gift > input {
       margin-right: 3px; /* Smaller margin */
   }
 
   .subtotal > button {
-      padding: 8px; /* Smaller padding for the button */
+      padding: 5px; /* Smaller padding for the button */
       margin-top: 5px; /* Smaller margin-top */
       font-size: 14px; /* Smaller font size for text inside the button */
-      /* Adjust other button styles as needed */
+      margin-left: 10px;
   }
 }
