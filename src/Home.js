@@ -51,10 +51,13 @@ function Home() {
                     rating={3}
                     image="https://m.media-amazon.com/images/I/81IfN-Rw8uL._AC_SX522_.jpg"
                 />
+                <div className="product">
+                <img src="/Screenshot 2024-01-16 at 5.47.23 AM.png" alt="Additional Item" />
+            </div>
             </div>
 
             <div className="home__productsrow2">
-                <Product
+            <Product
                     id="56789"
                     title="Fitbit Pai Chai Watch for Fitness Tracking"
                     price={18.99}
