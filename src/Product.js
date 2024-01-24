@@ -23,7 +23,7 @@ function Product({ id, title, image, price, rating }) {
   };
 
   useEffect(() => {
-    axios.get('/api/products') // Replace with your backend API endpoint
+    axios.get('http://localhost:8557/api/products/productinfo') // Replace with your backend API endpoint
       .then((response) => {
         // Handle the API response here
         const products = response.data;

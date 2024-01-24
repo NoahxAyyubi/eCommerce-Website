@@ -10,7 +10,7 @@ function Home() {
     const [productData, setProductData] = useState([]);
 
     useEffect(() => {
-        axios.get('/api/products') // Replace with your backend API endpoint
+        axios.get('http://localhost:8557/api/products/productinfo') // Replace with your backend API endpoint
             .then((response) => {
                 const products = response.data;
                 setProductData(products);
@@ -49,7 +49,24 @@ function Home() {
             </div>
 
             <div className="home__productsrow1">
-                {productData.map((product) => (
+                {productData.slice(0, 2).map((product) => (
+                    <Product
+                        key={product.id}
+                        id={product.id}
+                        title={product.title}
+                        price={product.price}
+                        rating={product.rating}
+                        image={product.image}
+                    />
+                ))}
+                {/* Standalone image */}
+                <div className="product">
+                    <img src="/Screenshot 2024-01-16 at 5.47.23 AM.png" alt="Additional Item" />
+                </div>
+            </div>
+
+            <div className="home__productsrow2">
+                {productData.slice(2, 5).map((product) => (
                     <Product
                         key={product.id}
                         id={product.id}
